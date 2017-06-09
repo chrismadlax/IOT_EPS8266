@@ -1,0 +1,1 @@
+from machine import Pin, PWMimport timeservo = PWM(Pin(0), freq=50, duty=40)for i in range(60):	servo.duty(40)	time.sleep(0.5)	servo.duty(130)	time.sleep(0.5)	

@@ -1,0 +1,1 @@
+from machine import Pin, PWMpwm = PWM(Pin(2))pwm.freq(1000)for i in range(3):	for j in range(1030):		pwm.duty(1000-j)		time.sleep_ms(1)	for k in range(1030):		pwm.duty(k)		time.sleep_ms(1)
