@@ -1,14 +1,4 @@
-from machine import Pin
-import onewire
-
-ow = onewire.OneWire(Pin(12))
-
-import time, ds18x20
-
-ds = ds18x20.DS18X20(ow)
-while True:
-	roms = ds.scan()
-	ds.convert_temp()
-	time.sleep_ms(750)
-	for rom in roms:
-		print(ds.read_temp(rom)) 
+from machine import Pinimport time
+print('hello world')
+pin = Pin(10, Pin.OUT)
+for i in range(10):	pin.low()	time.sleep(0.5)	pin.high()	time.sleep(0.5)pin.high()while True:	if pin.value() == 0:		print('USR buttom push!!')	time.sleep(0.1)
