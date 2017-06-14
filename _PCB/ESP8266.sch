@@ -13055,8 +13055,8 @@ Grid 2.54 mm&lt;p&gt;
 <part name="C8" library="rcl" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="C9" library="rcl" deviceset="C-US" device="C0805" value="0.1uF"/>
 <part name="C10" library="rcl" deviceset="C-US" device="C0805" value="47uF"/>
-<part name="T1" library="transistor" deviceset="*-NPN-" device="SOT23-EBC" value="S8050"/>
-<part name="T2" library="transistor" deviceset="*-NPN-" device="SOT23-EBC" value="S8050"/>
+<part name="T1" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT2222ALT1" value="S8050"/>
+<part name="T2" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT2222ALT1" value="S8050"/>
 <part name="Q1" library="crystal" deviceset="CRYSTAL" device="SM49" value="12M"/>
 <part name="GND" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
@@ -13395,27 +13395,27 @@ Grid 2.54 mm&lt;p&gt;
 <net name="N$17" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="71.12" x2="157.48" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="66.04" x2="162.56" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="T2" gate="G$1" pin="E"/>
-<wire x1="162.56" y1="60.96" x2="172.72" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="1" pin="!RTS"/>
 <wire x1="127" y1="81.28" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="81.28" x2="157.48" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="T2" gate="G$1" pin="E"/>
+<wire x1="172.72" y1="60.96" x2="162.56" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="60.96" x2="157.48" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="66.04" x2="157.48" y2="71.12" width="0.1524" layer="91"/>
 <junction x="157.48" y="71.12"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="T1" gate="G$1" pin="E"/>
-<wire x1="172.72" y1="66.04" x2="162.56" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="66.04" x2="157.48" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="60.96" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="1" pin="!DTR"/>
 <wire x1="127" y1="76.2" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="76.2" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="55.88" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="T1" gate="G$1" pin="E"/>
+<wire x1="172.72" y1="66.04" x2="162.56" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="66.04" x2="157.48" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="60.96" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
 <junction x="157.48" y="55.88"/>
 </segment>
 </net>
@@ -13702,6 +13702,21 @@ Grid 2.54 mm&lt;p&gt;
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,127,78.74,IC1,!CTS,,,,"/>
+<approved hash="202,1,127,73.66,IC1,!DSR,,,,"/>
+<approved hash="202,1,127,71.12,IC1,!DCD,,,,"/>
+<approved hash="202,1,127,68.58,IC1,!RI,,,,"/>
+<approved hash="104,1,99.06,83.82,IC1,VCCIO,N$24,,,"/>
+<approved hash="113,1,210.427,101.304,U1,,,,,"/>
+<approved hash="113,1,53.6617,74.93,POW,,,,,"/>
+<approved hash="113,1,146.05,68.2583,RX,,,,,"/>
+<approved hash="113,1,146.05,58.0983,TX,,,,,"/>
+<approved hash="113,1,194.31,132.402,ULED,,,,,"/>
+<approved hash="113,1,44.0605,66.04,L1,,,,,"/>
+<approved hash="113,1,272.88,71.12,X2,,,,,"/>
+<approved hash="113,1,272.88,147.32,X3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
